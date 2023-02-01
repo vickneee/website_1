@@ -239,6 +239,7 @@ img {
 
 .body__container_4 {
     display: flex;
+    align-items: flex-start;
     justify-content: space-evenly;
     padding: 60px;
     background: #bdcbd1;
