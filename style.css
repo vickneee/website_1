@@ -169,12 +169,19 @@ img {
     margin: 0;
 }
 
+.body__container_4 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 60px;
+    background: #bdcbd1;
+}
+
 .main_page__body_4 {
     padding: 80px 70px 70px 70px;
     display: flex;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-evenly;
     gap: 50px;
-    align-items: center;
 }
 
 .about_page__flex {
@@ -235,14 +242,6 @@ img {
     padding: 45px;
     align-items: center;
     text-align: center;
-}
-
-.body__container_4 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    padding: 60px;
-    background: #bdcbd1;
 }
 
 .project__h2 {
