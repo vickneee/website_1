@@ -1,16 +1,24 @@
 * {
     box-sizing: border-box;
-    margin: 0;
 }
 
-html,
+html {
+    position: relative;
+}
+
 body {
     font-family: 'Mulish', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 130%;
     background: #d3dde1;
-    margin-top: 60px;
-    min-height: calc(100vh - 155px);
+    padding: 0;
+    position: relative;
+    margin: 3px 0 0 0 ;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
 }
 
 .main_header {
@@ -20,7 +28,7 @@ body {
     top: 0;
     left: 0;
     padding: 0.5rem 1rem;
-    z-index: 1;
+    z-index: 7;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,10 +59,11 @@ body {
 
 #projects {
     padding: 8px 14px;
-    background: #396476 ;
+    background: #396476;
     border-radius: 10px;
     border: 2px solid #e28743;
 }
+
 #projects:hover,
 #projects:active {
     background: #235367;
@@ -79,13 +88,28 @@ h1 {
 
 img {
     margin: auto;
-    height: 350px;
+    height: 270px;
     border-radius: 8px;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.main_page {
+    width: 85%;
+    margin: auto;
 }
 
 .main_page__title_1 {
     color: #193a48;
-    margin-bottom: 40px;
 }
 
 .main_page__image_1 {
@@ -94,25 +118,18 @@ img {
 }
 
 .main_page__body_1 {
-    padding: 40px 70px 70px 70px;
     display: flex;
     justify-content: center;
-    gap: 20px;
     align-items: center;
 }
 
 .text_box {
-    background-color: #658795;
-    padding: 20px;
-    color: white;
+    /*background-color: #658795;*/
+    color: #193a48;
     width: 85%;
-    text-align: center;
-    border-radius: 8px;
-}
-
-#page__1 {
-    background: #d3dde1;
-    height: 100vh;
+    height: 30vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .body__container {
@@ -123,7 +140,6 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 13px;
     color: #193a48;
 }
 
@@ -142,7 +158,7 @@ img {
     font-weight: bold;
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin-top: 20px;
     padding: 34px;
     text-align: center;
 }
@@ -162,14 +178,15 @@ img {
 .footer {
     width: 100%;
     background: #235367;
-    padding: 30px;
-    position: sticky;
-    top: 100%;
+    height: 70px;
     display: flex;
-    margin-bottom: 0;
     align-items: center;
     justify-content: space-between;
     color: #d3dde1;
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .main_footer__left {
