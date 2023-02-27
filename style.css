@@ -136,6 +136,7 @@ img {
     height: 30vh;
     overflow-y: scroll;
     overflow-x: hidden;
+    padding-bottom: 15px;
 }
 
 .body__container {
