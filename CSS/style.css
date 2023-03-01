@@ -105,7 +105,7 @@ img {
 
 .main_page {
     width: 85%;
-    margin: auto;
+    margin: 105px auto;
 }
 
 .main_page__title_1 {
@@ -132,7 +132,7 @@ img {
 
 #main_text_box {
     background: transparent;
-    height: 30vh;
+    height: 27vh;
 }
 
 .text_box {
